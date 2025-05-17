@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HUFS · 정보통신공학과</title>
+
+    <!-- Fonts & Tailwind -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      body {
+        font-family: 'Nanum Gothic', sans-serif;
+      }
+    </style>
+  </head>
+
+  <body class="bg-gray-100">
+    <!-- Top Mini Bar -->
+    <div class="w-full bg-white border-b border-gray-200 text-xs">
+      <div
+        class="max-w-7xl mx-auto flex items-center justify-between px-4 py-1"
+      >
+        <div class="flex items-center gap-1">
+          <img
+            src="https://via.placeholder.com/18x18"
+            alt="logo"
+            class="w-4 h-4"
+          />
+          <span class="font-semibold">정보통신공학과</span>
+        </div>
+        <div class="flex gap-4">
+          <a href="#" class="hover:underline">이메일</a>
+          <a href="#" class="hover:underline">로그인</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Nav -->
+    <nav class="w-full bg-[#002D56] text-white">
+      <div
+        class="max-w-7xl mx-auto flex items-center justify-center gap-10 py-3 text-sm font-semibold"
+      >
+        <a class="hover:text-sky-300" href="#">학과소개</a>
+        <a class="hover:text-sky-300" href="#">학사·장학</a>
+        <a class="hover:text-sky-300" href="#">교과과정</a>
+        <a class="hover:text-sky-300" href="#">대학원</a>
+        <a class="hover:text-sky-300" href="#">학회시설</a>
+      </div>
+    </nav>
+
+    <!-- Quick Access Bar -->
+    <div class="w-full bg-gray-200">
+      <div
+        class="max-w-7xl mx-auto flex justify-center items-center gap-6 py-2 text-sm font-semibold text-gray-700"
+      >
+        <a href="#" class="hover:text-sky-600">e-Class</a>
+        <a href="#" class="hover:text-sky-600">종합정보시스템</a>
+        <a href="#" class="hover:text-sky-600">도서관</a>
+        <a href="#" class="hover:text-sky-600">입학안내</a>
+      </div>
+    </div>
+
+    <!-- Hero (배너) -->
+    <section
+      class="relative w-full h-96 flex flex-col items-center justify-center text-center overflow-hidden"
+      style="background: url('./img/hufs_main.png') center/cover no-repeat"
+    >
+      <div class="absolute inset-0 bg-black/50"></div>
+
+      <h2 class="relative text-white text-2xl md:text-4xl font-bold mb-3">
+        공과대학 <span class="text-teal-300">정보통신공학과</span>
+      </h2>
+      <p class="relative text-base md:text-lg text-gray-200">
+        Department of Information Communication Engineering
+      </p>
+    </section>
+
+    <!-- News Section -->
+    <section class="max-w-7xl mx-auto px-4 py-16">
+      <div class="flex flex-col md:flex-row gap-10">
+        <!-- Left Column -->
+        <div class="md:w-1/4">
+          <h3 class="text-2xl font-bold leading-snug mb-4">
+            한국외대<br />정보통신공학과<br />소식
+          </h3>
+          <a href="page2.html" class="text-sm underline hover:text-blue-600"
+            >소식 더보기 &gt;</a
+          >
+        </div>
+
+        <!-- News Cards -->
+        <div class="flex-1 grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <article
+            class="bg-[#6b5b4b] text-gray-100 p-4 rounded-md shadow hover:-translate-y-1 transition"
+          >
+            <h4 class="text-xs font-semibold mb-1">홍보 / 수상</h4>
+            <p class="text-sm line-clamp-2">
+              [M·Experience 김모연 교수팀] 2025 3대창업...
+            </p>
+            <time class="block mt-3 text-xs opacity-80">2025.04.28</time>
+          </article>
+
+          <article
+            class="bg-[#6b5b4b] text-gray-100 p-4 rounded-md shadow hover:-translate-y-1 transition"
+          >
+            <h4 class="text-xs font-semibold mb-1">학과 소식</h4>
+            <p class="text-sm line-clamp-2">
+              [2025학년도 후기 신입생 모집 안내] 입학금, 장학제도 등...
+            </p>
+            <time class="block mt-3 text-xs opacity-80">2025.02.13</time>
+          </article>
+
+          <article
+            class="bg-[#6b5b4b] text-gray-100 p-4 rounded-md shadow hover:-translate-y-1 transition"
+          >
+            <h4 class="text-xs font-semibold mb-1">특허 실적</h4>
+            <p class="text-sm line-clamp-2">
+              [M·Experience 김모연 교수팀] IMMERSIVE VIRTUAL GOLF SERVICE WITH
+              XR DEVICE, US 2024
+            </p>
+            <time class="block mt-3 text-xs opacity-80">2025.02.13</time>
+          </article>
+
+          <article
+            class="bg-[#6b5b4b] text-gray-100 p-4 rounded-md shadow hover:-translate-y-1 transition"
+          >
+            <h4 class="text-xs font-semibold mb-1">학술 행사</h4>
+            <p class="text-sm line-clamp-2">KMF2024 장소: NTP...</p>
+            <time class="block mt-3 text-xs opacity-80">2024.10.17</time>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Links Section -->
+    <section class="bg-[#0b2958] py-16">
+      <div class="max-w-7xl mx-auto flex flex-wrap justify-center gap-10">
+        <!-- Quick Link Cards (4개) -->
+        <!-- ... (카드 코드는 이전과 동일하므로 생략 가능) -->
+      </div>
+    </section>
+  </body>
+</html>
