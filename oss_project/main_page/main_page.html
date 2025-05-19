@@ -28,11 +28,12 @@
         color: transparent;
       }
 
-      /* 🔸 메가 메뉴: 넉넉한 고정 높이(16rem) + 스크롤 허용 */
+      /* 🔸 메가 메뉴: 고정 높이 + 스크롤 허용
+         ⬇ 아래쪽 여유 공간 5px 증가  */
       #mega-menu {
         background: rgba(2, 49, 90, 0.85);
         box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
-        height: 16rem; /* 256px */
+        height: calc(16rem + 5px); /* 16rem(256px) + 5px */
         overflow-y: auto;
       }
 
@@ -233,7 +234,8 @@
     </section>
 
     <!-- ▣ HUBOT CTA Section -->
-    <section class="relative bg-[#0b2958] py-24 text-white overflow-hidden">
+    <!-- ⬇ padding(위/아래) 절반으로: py-24 → py-12 -->
+    <section class="relative bg-[#0b2958] py-12 text-white overflow-hidden">
       <div
         class="max-w-7xl mx-auto relative flex flex-col items-center text-center"
       >
@@ -301,12 +303,8 @@
         </p>
 
         <!-- 연락처 -->
-        <p>
-          <span class="text-[#c9aa71]">Tel.</span> 031-330-4255
-        </p>
-        <p>
-          <span class="text-[#c9aa71]">e-mail.</span> ice@hufs.ac.kr
-        </p>
+        <p><span class="text-[#c9aa71]">Tel.</span> 031-330-4255</p>
+        <p><span class="text-[#c9aa71]">e-mail.</span> ice@hufs.ac.kr</p>
 
         <!-- 저작권 -->
         <p class="pt-2 text-xs text-gray-500">
